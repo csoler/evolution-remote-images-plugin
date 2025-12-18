@@ -1,0 +1,16 @@
+Source: evolution-plugin-remote-images
+Section: devel
+Priority: standard
+Maintainer: Cyril Soler <cyril.soler@inria.fr>
+Build-Depends: debhelper (>= 9), qt5-qmake, qtbase5-dev, libglib2.0-dev, libgtk-3-dev, evolution-dev, libebook1.2-dev
+Standards-Version: 3.9.3
+Homepage: http://artis.imag.fr/~Cyril.Soler
+
+Package: evolution-plugin-remote-images
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: adds a button to the composer context menu to paste images as links
+ Evolution is a mail client shipped with an HTML editor. This plugin
+ lets the user paste images as links, which avoids embedding the image data in the email which saves
+ a lot of email storage space. 
+
