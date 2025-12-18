@@ -6,7 +6,14 @@
     <author name="Cyril Soler" email="cyril.soler@inria.fr"/>
     <description>Adds an entry to editor context menu to insert links to remote images.</description>
      <hook class="org.gnome.evolution.ui:1.0">
-       <ui-manager id="org.gnome.evolution.composer"/>
+		<ui-manager id="org.gnome.evolution.composer">
+			<ui>
+				<popup name="context-menu">
+					<separator/>
+					<menuitem name="PasteSpecial" action="paste-special-action"/>
+				</popup>
+			</ui>
+		</ui-manager>
      </hook>
   </e-plugin>
 </e-plugin-list>
